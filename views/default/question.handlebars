@@ -34,7 +34,7 @@
   console.log(jsonData); try { 
     let response = await axios.post('https://chat-gpt-l92n.onrender.com/answer', jsonData);
   console.log('ServerResponse:', response.data.data); 
-  let redirectUrl=`http://localhost:5000/answer/?data=${response.data.data}`;
+  let redirectUrl=`https://al-blog-7fx8.onrender.com/answer/?data=${response.data.data}`;
   window.location.href = redirectUrl; } catch (error) { console.error('Error:',
   error); } })
 </script>

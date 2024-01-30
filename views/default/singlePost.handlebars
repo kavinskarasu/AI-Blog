@@ -111,7 +111,7 @@
   e.preventDefault(); const jsonData={ data:val.value }; try { let response =
   await axios.post('https://chat-gpt-l92n.onrender.com/', jsonData);
   console.log('ServerResponse:', response.data.data); let
-  redirectUrl=`http://localhost:5000/question/?data=${response.data.data}`;
+  redirectUrl=`https://al-blog-7fx8.onrender.com/question/?data=${response.data.data}`;
   window.location.href = redirectUrl; } catch (error) { console.error('Error:',
   error); } })
 </script>
